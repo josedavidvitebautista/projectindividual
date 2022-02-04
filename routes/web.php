@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\datos;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/inicio', function () {
-    return view('home');
+    $info= new datos();
+    $info ->nombre = "José David";
+    $info ->apellido = "Vite Bautista";
+    $info ->grupo ="3522IS";
+    return view ('home', ['info' => $info]);
 })-> name('inicio');
 
 Route::get('/informacion', function () {
-    return view('generic');
+    $info= new datos();
+    $info ->nombre = "José David";
+    $info ->apellido = "Vite Bautista";
+    $info ->grupo ="3522IS";
+    return view('generic', ['info' => $info]);
 })-> name('informacion');
 
 Route::get('/movies', function () {
-    return view('elements');
+    $info= new datos();
+    $info ->nombre = "José David";
+    $info ->apellido = "Vite Bautista";
+    $info ->grupo ="3522IS";
+    return view('elements', ['info' => $info] );
 })-> name('movies');

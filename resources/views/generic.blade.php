@@ -92,11 +92,13 @@
 					</article>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+                <footer id="footer">
+                    <ul class="copyright">
+                        <p>Autor<br> {{$info->nombre}} {{$info->apellido}}</p>
+                        <p>Grupo <br> {{$info->grupo}}</p>
+                        <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </footer>
 
 			</div>
 
